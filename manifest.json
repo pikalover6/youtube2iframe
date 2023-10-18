@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube2iframe",
+    "version": "1.0",
+    "description": "An extension to replace YouTube's default player with an embed iframe.",
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "http://www.youtube.com/*",
+      "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
